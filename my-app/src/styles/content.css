@@ -1,0 +1,13 @@
+.headshot {
+    height: 5rem;
+    width: 5rem;
+}
+
+.parent {
+    text-align: left;
+}
+
+.firstChild {
+    display: inline-block;
+    vertical-align: middle;
+}

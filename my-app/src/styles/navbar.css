@@ -1,0 +1,11 @@
+.navBrand {
+    margin: 1rem;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: darkgray;
+}
