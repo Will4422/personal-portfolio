@@ -1,18 +1,55 @@
-.headshot {
+.container {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "name name name name name name name name name name"
+    "who-am-i who-am-i who-am-i who-am-i who-am-i who-am-i who-am-i-pic who-am-i-pic who-am-i-pic who-am-i-pic"
+    "who-am-i-text who-am-i-text who-am-i-text who-am-i-text who-am-i-text who-am-i-text who-am-i-pic who-am-i-pic who-am-i-pic who-am-i-pic"
+    "my-interests-pic my-interests-pic my-interests-pic my-interests-pic my-interests my-interests my-interests my-interests my-interests my-interests"
+    "my-interests-pic my-interests-pic my-interests-pic my-interests-pic my-interests-text my-interests-text my-interests-text my-interests-text my-interests-text my-interests-text";
+}
+
+.grid-item-1 {
+    grid-area: name;
+    margin-bottom: 50px;
+}
+
+.grid-item-2 {
+    grid-area: who-am-i;
+    
+}
+
+.grid-item-3 {
+    grid-area: who-am-i-text;
+    margin-bottom: 100px;
+}
+
+.grid-item-4 {
+    grid-area: who-am-i-pic;
+    margin-bottom: 100px;
+}
+
+.grid-item-5 {
+    grid-area: my-interests;
+    justify-self: end;
+}
+
+.grid-item-6 {
+    grid-area: my-interests-pic;
 
 }
 
-.parent {
-    text-align: left;
+.grid-item-7 {
+    grid-area: my-interests-text;
+
 }
 
-.text-child {
-    width: 75%;
-    display: inline-block;
-    vertical-align: middle;
+img {
+    max-width: 100%;
+    max-height: fit-content;
 }
 
-.img-child {
-    display: inline-block;
-    width: 25%;
-}
+.name h1 {
+    font-size: 5vw;
+  }
